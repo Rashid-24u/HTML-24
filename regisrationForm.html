@@ -12,15 +12,25 @@
              width: 25%;
              padding: 20px;
              border: 1px solid whitesmoke;
-             border-radius: 10px;
+             border-radius: 15px;
              
         }
+        input,select{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid grey;
+            margin-left: 10%;
+        }
+        h2{
+            margin-left: 5%;
+        }
+        
     </style>
 </head>
 <body>
     <div>
         <form action="" method="" enctype="multipart/form-data">
-            <h2>Registration info</h2>
+            <h2>Registration info </h2>
             <div>
                 <input type="text" placeholder="Enter your name" style="background-color: black;">
             </div><br>
@@ -31,13 +41,13 @@
                 <input type="text" placeholder="Zipcode" style="background-color: black; ">
             </div><br>
             <div>
-            <select name="" id="" style="background-color: black; color: whitesmoke;">
+            <select name="" id="" style="background-color: black; color: whitesmoke; width: 77%;">
                 <option value="" selected disabled>State</option>
                 <option value="">Kerela</option>
                 <option value="">Delhi</option>
                 <option value="">Goa</option>
             </select><br><br>
-        </div> 
+            </div> 
             <div>
                 <input type="text" placeholder="Username (6-8 characters)" style="background-color: black;">
             </div><br>
@@ -45,7 +55,7 @@
                 <input type="text" placeholder="Email" style="background-color: black;">
             </div><br>
             <div>
-                <input type="submit" value="Submit" style= "background-color:  rgb(146, 248, 45); border-radius: 20px; color: azure;" >
+                <input type="submit" value="Submit" style= "background-color:  rgb(146, 248, 45); border-radius: 20px; color: azure; margin-left: 22%; height:35px; width: 120px;" >
             </div>
         </form>    
 
