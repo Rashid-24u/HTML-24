@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>work1</title>
     <style>
         img{
-            height: 250px;
-            width:250px ;
-            border-radius:50%;
-            
+            height:300px;
+            width:300px;
+            border-radius: 50%;
+            margin-top:200px;
+            margin-left:200px;
+            position: relative;
+            animation-name: IMAGE;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
         }
-        div {
-            width: 100px;
-            height: 100px;
-            transition: width 2s, height 2s, transform 2s;
+        
+        @keyframes IMAGE {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
-        div{
-            width: 300px;
-            height: 300px;
-            transform: rotate(360deg);
-            }
 
 
     </style>
