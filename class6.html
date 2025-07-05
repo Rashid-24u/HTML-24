@@ -22,24 +22,60 @@
         </div>
     </div> -->
 
-    <div class="container-fluid">
-        <form action="">
-        <div class="row">
-            <div class="col-md-4 "><label>First name</label>
-                <input type="text" name="" id="" class="form-control" required></div>
-            <div class="col-md-4 "><label>Lastname</label>
-                <input type="text" name="" id="" class="form-control" required></div>
-            <div class="col-md-4 "><label>Username</label>
-                <input type="text" name="" id="" class="form-control" required></div>
-        </div>  
-        <div class="row">      
-            <div class="col-md-4 "><label>City</label>
-                <input type="text" name="" id="" class="form-control" required></div> 
-            <div class="col-md-4 "><label>State</label>
-                <select></select></div>       
-        </div>
+<div class="container-fluid">
+        <form class="main">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="">First name</label>
+                    <br><input type="text" class="form-control" required style="width: 260px;">
+                </div>
+                <div class="col-sm-4">
+                    <label for="">Last name</label>
+                    <br><input type="text" class="form-control" required style="width: 260px;">
+                </div>
+                <div class="col-sm-4">
+                    <label for="">Username</label>
+                    <br><input type="text" class="form-control" required style="width: 260px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="">City</label>
+                    <br><input type="text" class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label for="State">State</label>
+                    <div>
+                        <select name="State" id="State" class="form-control" required style="width: 230px;">
+                            <option value="" selected disabled>Choose your state...</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Delhi">Goa</option>
+                        </select>
+                    </div>    
+                </div>
+                <div class="col-sm-4">
+                    <label for="">Zip</label>
+                    <br><input type="text" class="form-control" required style="width: 230px;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="checkbox" required>
+                    <label for="">Agree to terms and conditions</label>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <button class="text-bg-primary" style="border-radius:10px; height: 40px;">Submit form</button>       
+                </div>
+            </div>
         </form>
     </div>
 </body>
-
 </html>
+
+
+
