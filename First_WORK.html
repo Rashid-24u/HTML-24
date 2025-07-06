@@ -19,6 +19,7 @@
             width: 100%;
             height: 100vh;
             font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            
         }
 
         .navbar {
@@ -26,7 +27,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:50px;
+            padding:0 50px;
         }
 
         .navbar ul {
@@ -46,8 +47,10 @@
         }
 
         .fork {
-            width: 50px;
+            width: 80px;
             height: 50px;
+            
+            
         }
 
         .navbar a {
@@ -57,6 +60,21 @@
             border-radius: 2px;
             font-size: 16px;
         }
+        .navbar a:not(.btn):hover{
+            color: rgb(252, 162, 7);
+            animation: delay 1s;
+        }
+
+        @keyframes delay{
+            from{
+                color: white;
+            }
+            to{
+                color: orange;
+            }
+        }
+
+        
 
         .navbar select {
             background-color: transparent;
@@ -65,9 +83,10 @@
             font-size: 16px;
         }
 
-        .navbar .btn {
+        .btn {
             background-color: rgb(252, 162, 7);
             padding: 8px;
+            color: aliceblue;
         }
 
         .content {
@@ -78,7 +97,12 @@
             font-size: 48px;
             color: white;
             margin-bottom: 20px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            color: rgb(252, 162, 7);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
         }
 
         p {
@@ -118,6 +142,10 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .pg:hover{
+            cursor: pointer;
+            animation: delay 1s;
+        }
     </style>
 </head>
 
@@ -126,7 +154,7 @@
     <div class="navbar">
         <div class="logo">
             <img src="spoon-and-fork (1).png" alt="Logo" class="fork" />
-            Restoran
+            <h2><b>Restoran</b></h2>
         </div>
         <ul>
             <li><a href="">HOME</a></li>
@@ -134,7 +162,7 @@
             <li><a href="">SERVICE</a></li>
             <li><a href="">MENU</a></li>
             <li>
-                <select>
+                <select class="pg">
                     <option disabled selected>PAGES</option>
                     <option style="color:black;">Booking</option>
                     <option style="color:black;">Our Team</option>
@@ -147,7 +175,7 @@
     </div>
 
     <div class="content">
-        <h1>Enjoy Our<br>Delicious Meal</h1>
+        <h1><b>Enjoy Our</b><br><b>Delicious Meal</b></h1>
         <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
             Aliqu diam amet diam et<br>
             eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore<br> erat amet
