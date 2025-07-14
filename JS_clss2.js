@@ -127,7 +127,7 @@
 
 // }
 
-let mark = -5;
+let mark = 75;
 
 switch (true) {
     case mark < 0 || mark > 100:
